@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.box {
+    width: 900px;
+    height: 600px;
+    box-shadow: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+    position: relative;
+    background-image: url('img/city1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition-duration: 2s;
+}
+
+#zmiennikL {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 50%;
+    left: 0.25%;
+    transform: translateY(-50%);
+   
+}
+
+.zmien img {
+    background-color: lightgray;
+    color: red;
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+
+#zmiennikP {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 50%;
+    right: 0.25%;
+    transform: translateY(-50%);
+
+}
+
+.logo {
+    align-self: flex-end;
+}
+@media (max-width: 900px){
+    .box {
+        width: 525px;
+        height: 375px;
+}
+}
+@media (max-width: 600px){
+    .box {
+        width: 450px;
+        height: 300px;
+}
+}
+@media (max-width: 450px){
+    .box {
+        width: 375px;
+        height: 225px;
+}
+}
